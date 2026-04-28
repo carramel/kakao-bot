@@ -25,8 +25,8 @@ async function sendMessage(accessToken) {
   params.append(
     "template_object",
     JSON.stringify({
-      object_type: "ㅎㅇ",
-      text: messageText,
+      object_type: "text",
+      text: "깃허브 테스트 메시지 성공 🚀",
       link: {
         web_url: "https://example.com"
       }
