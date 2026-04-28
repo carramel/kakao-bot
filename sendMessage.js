@@ -36,6 +36,8 @@ async function sendMessage(accessToken) {
   .filter(person => person.birthday === todayStr)
   .map(person => person.name);
 
+   console.error('여까진댔으요');
+
   // 4. 메시지 텍스트 구성
   let messageText = "";
   if (todayBirthdays.length > 0) {
