@@ -2,7 +2,7 @@ name: Kakao Auto Message
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # 한국 오전 9시
+    - cron: '*/2 * * * *'   # 한국 오전 9시
   workflow_dispatch:
 
 jobs:
