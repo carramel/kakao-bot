@@ -8,6 +8,8 @@ const REFRESH_TOKEN = process.env.KAKAO_REFRESH_TOKEN;
 // 📌 오늘 날짜 구하기 (MM-DD)
 function getToday() {
   const today = new Date();
+  today.setDate(today.getDate() + 1); // 🔥 하루 추가
+  
   const month = String(today.getMonth() + 1).padStart(2, "0");
   const day = String(today.getDate()).padStart(2, "0");
   return `${month}-${day}`;
